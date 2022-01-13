@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="kturgut-mbp-1" name="com.conviva.id.config.AssignmentAggregatorConfigSpec" tests="12" errors="0" failures="2" skipped="0" time="11.683" timestamp="2021-07-14T15:18:11">
+          <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="jna.platform.library.path" value="/usr/lib:/usr/lib"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="sun.boot.library.path" value="/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib"/><property name="java.vm.version" value="25.275-b01"/><property name="gopherProxySet" value="false"/><property name="java.vm.vendor" value="Amazon.com Inc."/><property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/><property name="path.separator" value=":"/><property name="jna.loaded" value="true"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="US"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="unknown"/><property name="jna.nosys" value="true"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="/Users/kturgut/Conviva/conviva-id"/><property name="java.runtime.version" value="1.8.0_275-b01"/><property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/><property name="idea.managed" value="true"/><property name="java.endorsed.dirs" value="/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/endorsed"/><property name="os.arch" value="x86_64"/><property name="java.io.tmpdir" value="/var/folders/l0/sc70llsn0kbbj854klbygcbh0000gn/T/"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="log4j.ignoreTCL" value="true"/><property name="os.name" value="Mac OS X"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/Users/kturgut/Library/Caches/JNA/temp/jna5316675446770752706.tmp"/><property name="sbt.boot.credentials" value="/Users/kturgut/.sbt/.credentials"/><property name="java.library.path" value="/Users/kturgut/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.15.7"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="swoval.tmpdir" value="/Users/kturgut/.sbt/1.0"/><property name="user.home" value="/Users/kturgut"/><property name="user.timezone" value="America/Los_Angeles"/><property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/><property name="idea.installation.dir" value="/Applications/IntelliJ IDEA CE.app/Contents"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/Users/kturgut/Library/Application Support/JetBrains/IdeaIC2021.1/plugins/Scala/launcher/sbt-launch.jar"/><property name="user.name" value="kturgut"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/Users/kturgut/Library/Application Support/JetBrains/IdeaIC2021.1/plugins/Scala/launcher/sbt-launch.jar early(addPluginSbtFile=&quot;&quot;&quot;/private/var/folders/l0/sc70llsn0kbbj854klbygcbh0000gn/T/idea7.sbt&quot;&quot;&quot;) ; set ideaPort in Global := 49401 ; idea-shell"/><property name="java.home" value="/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_275"/><property name="java.ext.dirs" value="/Users/kturgut/Library/Java/Extensions:/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/><property name="sun.boot.class.path" value="/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/resources.jar:/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/rt.jar:/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/sunrsasign.jar:/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/jsse.jar:/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/jce.jar:/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/charsets.jar:/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/lib/jfr.jar:/Users/kturgut/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home/jre/classes"/><property name="java.vendor" value="Amazon.com Inc."/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/><property name="sbt.supershell" value="false"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="sun.cpu.endian" value="little"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.isalist" value=""/>
+    </properties>
+          <testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when initialized with valid config it should be able to parse it" time="0.095">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when initialized with a valid config where customer-ids and date intervals are at conviva-id level" time="0.007">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when inherit certain settings from defaults.conf" time="0.006">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when passed same grain 'Daily' for input and output should raise exception" time="0.006">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when passed same grain 'Monthly' for input and output should raise exception" time="0.005">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when passed same grain from course grain to fine grain should raise exception" time="0.004">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when from datetime is later than to datetime should raise exception" time="0.009">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when passed no customerId should raise exception exit" time="0.003">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when passed empty customerId should raise exception exit" time="0.003">
+                      
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when calculating output location should calculate standard output location correctly if no custom job name is passed" time="0.026">
+                      <failure message="org.scalatest.exceptions.TestFailedException: &quot;CID_HOME/assignment[s]/HouseholdByIpClient...&quot; did not equal &quot;CID_HOME/assignment[Summary]/HouseholdByIpClient...&quot;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: &quot;CID_HOME/assignment[s]/HouseholdByIpClient...&quot; did not equal &quot;CID_HOME/assignment[Summary]/HouseholdByIpClient...&quot;
+	at org.scalatest.Assertions$class.newAssertionFailedException(Assertions.scala:472)
+	at org.scalatest.Assertions$.newAssertionFailedException(Assertions.scala:1231)
+	at org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:1295)
+	at com.conviva.id.config.AssignmentAggregatorConfigSpec$$anonfun$1$$anonfun$apply$mcV$sp$7$$anonfun$apply$mcV$sp$18.apply(AssignmentAggregatorConfigSpec.scala:211)
+	at com.conviva.id.config.AssignmentAggregatorConfigSpec$$anonfun$1$$anonfun$apply$mcV$sp$7$$anonfun$apply$mcV$sp$18.apply(AssignmentAggregatorConfigSpec.scala:202)
+	at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anon$1.apply(AnyWordSpecLike.scala:1227)
+	at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)
+	at com.conviva.id.assignment.BaseSpec.withFixture(HouseholdSpecHelper.scala:128)
+	at org.scalatest.wordspec.AnyWordSpecLike$class.invokeWithFixture$1(AnyWordSpecLike.scala:1224)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$runTest$1.apply(AnyWordSpecLike.scala:1237)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$runTest$1.apply(AnyWordSpecLike.scala:1237)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.wordspec.AnyWordSpecLike$class.runTest(AnyWordSpecLike.scala:1237)
+	at com.conviva.id.assignment.BaseSpec.runTest(HouseholdSpecHelper.scala:128)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$runTests$1.apply(AnyWordSpecLike.scala:1296)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$runTests$1.apply(AnyWordSpecLike.scala:1296)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:427)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:427)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.wordspec.AnyWordSpecLike$class.runTests(AnyWordSpecLike.scala:1296)
+	at com.conviva.id.assignment.BaseSpec.runTests(HouseholdSpecHelper.scala:128)
+	at org.scalatest.Suite$class.run(Suite.scala:1112)
+	at com.conviva.id.assignment.BaseSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(HouseholdSpecHelper.scala:128)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$run$1.apply(AnyWordSpecLike.scala:1341)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$run$1.apply(AnyWordSpecLike.scala:1341)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.wordspec.AnyWordSpecLike$class.run(AnyWordSpecLike.scala:1341)
+	at com.conviva.id.assignment.BaseSpec.org$scalatest$BeforeAndAfterAll$$super$run(HouseholdSpecHelper.scala:128)
+	at org.scalatest.BeforeAndAfterAll$class.liftedTree1$1(BeforeAndAfterAll.scala:213)
+	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:210)
+	at com.conviva.id.assignment.BaseSpec.run(HouseholdSpecHelper.scala:128)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:318)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:486)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregatorConfig when calculating output location should calculate standard output location correctly if a custom job name is passed" time="0.005">
+                      <failure message="org.scalatest.exceptions.TestFailedException: &quot;CID_HOME/assignment[s]/HouseholdByIpClient...&quot; did not equal &quot;CID_HOME/assignment[Summary]/HouseholdByIpClient...&quot;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: &quot;CID_HOME/assignment[s]/HouseholdByIpClient...&quot; did not equal &quot;CID_HOME/assignment[Summary]/HouseholdByIpClient...&quot;
+	at org.scalatest.Assertions$class.newAssertionFailedException(Assertions.scala:472)
+	at org.scalatest.Assertions$.newAssertionFailedException(Assertions.scala:1231)
+	at org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:1295)
+	at com.conviva.id.config.AssignmentAggregatorConfigSpec$$anonfun$1$$anonfun$apply$mcV$sp$7$$anonfun$apply$mcV$sp$19.apply(AssignmentAggregatorConfigSpec.scala:224)
+	at com.conviva.id.config.AssignmentAggregatorConfigSpec$$anonfun$1$$anonfun$apply$mcV$sp$7$$anonfun$apply$mcV$sp$19.apply(AssignmentAggregatorConfigSpec.scala:213)
+	at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anon$1.apply(AnyWordSpecLike.scala:1227)
+	at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)
+	at com.conviva.id.assignment.BaseSpec.withFixture(HouseholdSpecHelper.scala:128)
+	at org.scalatest.wordspec.AnyWordSpecLike$class.invokeWithFixture$1(AnyWordSpecLike.scala:1224)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$runTest$1.apply(AnyWordSpecLike.scala:1237)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$runTest$1.apply(AnyWordSpecLike.scala:1237)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.wordspec.AnyWordSpecLike$class.runTest(AnyWordSpecLike.scala:1237)
+	at com.conviva.id.assignment.BaseSpec.runTest(HouseholdSpecHelper.scala:128)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$runTests$1.apply(AnyWordSpecLike.scala:1296)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$runTests$1.apply(AnyWordSpecLike.scala:1296)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:427)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:427)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.wordspec.AnyWordSpecLike$class.runTests(AnyWordSpecLike.scala:1296)
+	at com.conviva.id.assignment.BaseSpec.runTests(HouseholdSpecHelper.scala:128)
+	at org.scalatest.Suite$class.run(Suite.scala:1112)
+	at com.conviva.id.assignment.BaseSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(HouseholdSpecHelper.scala:128)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$run$1.apply(AnyWordSpecLike.scala:1341)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anonfun$run$1.apply(AnyWordSpecLike.scala:1341)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.wordspec.AnyWordSpecLike$class.run(AnyWordSpecLike.scala:1341)
+	at com.conviva.id.assignment.BaseSpec.org$scalatest$BeforeAndAfterAll$$super$run(HouseholdSpecHelper.scala:128)
+	at org.scalatest.BeforeAndAfterAll$class.liftedTree1$1(BeforeAndAfterAll.scala:213)
+	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:210)
+	at com.conviva.id.assignment.BaseSpec.run(HouseholdSpecHelper.scala:128)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:318)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:486)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+                    </testcase><testcase classname="com.conviva.id.config.AssignmentAggregatorConfigSpec" name="HHAssignmentAggregator Object when passed a config with multiple customerIds should create MultiCustomerHouseholdAggregator for each customer" time="11.514">
+                      
+                    </testcase>
+          <system-out><![CDATA[]]></system-out>
+          <system-err><![CDATA[]]></system-err>
+        </testsuite>

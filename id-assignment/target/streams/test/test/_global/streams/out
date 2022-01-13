@@ -1,0 +1,133 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 8 initial tasks for 8 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.conviva.id.assignment.ClientsForCommonIpSpec, sbt.ForkMain$SubclassFingerscan@6276ae34, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mClientsForCommonIpSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mClientIdsForCommonIp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be able to create ClientIdsForCommonIp and merge another OverlappingClientIds onto it[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be able to merge with others of same IP[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise exception if merged with another of different IP[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should calculate if clientIds are all empty or not[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should reduce a list if it contains emptyOnly clientIds and others are not emptyOnly if same ip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should reduce a list if it contains emptyOnly clientIds and others are not emptyOnly within group of same ip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not reduce a list if it contains emptyOnly clientIds and others are not emptyOnly if not same ip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should preserve even empty clientIds when reducing list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not reduce a list if it does not contains emptyOnly clientIds[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not reduce a list if it only contains single entry that is emptyOnly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should gracefully reduce an empty list[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 11 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.conviva.id.config.AssignmentAggregatorConfigSpec, sbt.ForkMain$SubclassFingerscan@7946e1f4, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAssignmentAggregatorConfigSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHHAssignmentAggregatorConfig[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- when initialized with valid config it should be able to parse it[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- when initialized with a valid config where customer-ids and date intervals are at conviva-id level[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- when inherit certain settings from defaults.conf[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when passed same grain 'Daily' for input and output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should raise exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when passed same grain 'Monthly' for input and output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should raise exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when passed same grain from course grain to fine grain[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should raise exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when from datetime is later than to datetime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should raise exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when passed no customerId[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should raise exception exit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when passed empty customerId[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should raise exception exit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when calculating output location[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  - should calculate standard output location correctly if no custom job name is passed *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "CID_HOME/assignment[s]/HouseholdByIpClient..." did not equal "CID_HOME/assignment[Summary]/HouseholdByIpClient..." (AssignmentAggregatorConfigSpec.scala:211)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "CID_HOME/assignment[s]/HouseholdByIpClient..." -> "CID_HOME/assignment[Summary]/HouseholdByIpClient..."[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  - should calculate standard output location correctly if a custom job name is passed *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "CID_HOME/assignment[s]/HouseholdByIpClient..." did not equal "CID_HOME/assignment[Summary]/HouseholdByIpClient..." (AssignmentAggregatorConfigSpec.scala:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "CID_HOME/assignment[s]/HouseholdByIpClient..." -> "CID_HOME/assignment[Summary]/HouseholdByIpClient..."[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHHAssignmentAggregator Object[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when passed a config with multiple customerIds[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should create MultiCustomerHouseholdAggregator for each customer[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 12 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.conviva.id.assignment.HouseholdAssignmentAggregatorSpec, sbt.ForkMain$SubclassFingerscan@3c09711b, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHouseholdAssignmentAggregatorSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHouseholdAssignmentAggregator processing SINGLE Household data daily=>monthly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when input Assignment table is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should handle it gracefully and cause no exception[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when sessions of the SAME IP with time spans that may or may not be overlapping[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should reduce all sessions to a single row when start times are the same[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should reduce all sessions to a single row when end times are the same[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should reduce all sessions to a single row even when session are zero length[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should reduce all session to a single row same clientId[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should reduce all unique clientIds into single row aggregating clientIds[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when sessions of the MULTIPLE IPs with time spans that may or may not be overlapping[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should maintain sort order based on startTime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should merge non-overlapping clientIds of adjacent sets if the have the same IP, at the end of sort order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should merge non-overlapping clientIds of adjacent sets if the have the same IP unless there are no other ips in middle[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should merge non-overlapping clientIds of adjacent sets with same IP, based on sort order - case 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should merge non-overlapping clientIds of adjacent sets with same IP, based on sort order - case 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should merge non-overlapping clientIds of adjacent sets with same IP, based on sort order - case 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should merge non-overlapping clientIds of adjacent sets with same IP, based on sort order - case 4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should merge non-overlapping clientIds of adjacent sets if they have the same ip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHouseholdAssignmentAggregator exporting Households with empty client id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when Input data has household ip entries with no client id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should filter those from the output [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when Input data has household ip entries all of which have no client id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should filter those from the output [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHouseholdAssignmentAggregator processing MULTIPLE Households data daily=>monthly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when sessions are interleaving within same or different IPs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should merge non-overlapping clientIds when adjacent sets ordered by start time have the same IP [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHouseholdAssignmentAggregator processing hourly=>monthly, skipping daily grain[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- when aggregate properly skipping summarization to daily as intermediate step[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 18 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.conviva.id.assignment.HouseholdAssignmentAggregatorComponentSpec, sbt.ForkMain$SubclassFingerscan@5cc7c2a6, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHouseholdAssignmentAggregatorComponentSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mvalidate statistics on component inputs and outputs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when input data is created in memory[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should correctly generate aggregate client assignments and cross check consistency[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.conviva.spark.PartitionCalculatorSpec, sbt.ForkMain$SubclassFingerscan@b97c004, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPartitionCalculatorSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPartitionCalculator[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when given proper config parameters, spark config and expected row size and number of rows[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should calculate partition count properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when given invalid proper config parameters[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should raise illegal argument exception[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.conviva.id.assignment.OverlappingClientsForHouseholdIpSpec, sbt.ForkMain$SubclassFingerscan@4590c9c3, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOverlappingClientsForHouseholdIpSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOverlappingClientIds[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support be comparable by timeStamp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support be comparable by clientId if clientIds are the same[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support be sorted by timeSpan.start[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support be sortable even with same timeSpan[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support merging other overlapping client ids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise exception if merged with non-overlapping timeSpan[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support merging an instance of OverlappingClientIds to an empty set[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support merging an instance of OverlappingClientIds to a set with no overlap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support merging an instance of OverlappingClientIds to a set with overlap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support merging sets of OverlappingClientIds same size both overlap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support merging sets of OverlappingClientIds same size sets one overlap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support merge small size set into larger size set and not merge potentially overlapping sessions within each set[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not merge adjacent sets of (ip, seq(OverlappingClientIds)) pairs if they don't share the same ip when computing clientIdsForCommonIp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should merge adjacent sets of (ip, seq(OverlappingClientIds)) pairs if they share the same ip when computing clientIdsForCommonIp[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 14 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.conviva.id.assignment.BaseSpec, sbt.ForkMain$SubclassFingerscan@32e6e9c3, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBaseSpec:[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.conviva.id.assignment.HouseholdSpecHelper, sbt.ForkMain$SubclassFingerscan@5056dfcb, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHouseholdSpecHelper:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 42 seconds, 15 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 58[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 8, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 56, failed 2, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 2 TESTS FAILED ***[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.conviva.id.assignment.ClientsForCommonIpSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.conviva.id.assignment.HouseholdAssignmentAggregatorSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.conviva.id.assignment.HouseholdAssignmentAggregatorComponentSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.conviva.spark.PartitionCalculatorSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.conviva.id.assignment.OverlappingClientsForHouseholdIpSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.conviva.id.assignment.BaseSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.conviva.id.assignment.HouseholdSpecHelper[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	com.conviva.id.config.AssignmentAggregatorConfigSpec[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

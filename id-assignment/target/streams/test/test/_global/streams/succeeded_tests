@@ -1,0 +1,9 @@
+#Successful Tests
+#Wed Jul 14 15:18:40 PDT 2021
+com.conviva.spark.PartitionCalculatorSpec=1626301120034
+com.conviva.id.assignment.HouseholdSpecHelper=1626301120071
+com.conviva.id.assignment.OverlappingClientsForHouseholdIpSpec=1626301120066
+com.conviva.id.assignment.HouseholdAssignmentAggregatorComponentSpec=1626301120022
+com.conviva.id.assignment.HouseholdAssignmentAggregatorSpec=1626301115859
+com.conviva.id.assignment.ClientsForCommonIpSpec=1626301079370
+com.conviva.id.assignment.BaseSpec=1626301120069

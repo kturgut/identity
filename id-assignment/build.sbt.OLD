@@ -1,0 +1,32 @@
+//import Versions._
+
+//assembly / test := {}
+
+// Databricks Runtime 6.5 and earlier (and likely later versions as well)
+// provide an old version (1.2.1) of com.typesafe:config.
+// There is a bug in that version that breaks our config parsing if we run
+// the model as a jar job and pass any command-line parameters.
+// As a result, we need to provide our own shaded version of 'com.typesafe.config'.
+//assembly / assemblyShadeRules := Seq(
+//  ShadeRule.rename("com.typesafe.config.**" -> "shadetypesafeconfig.@1").inAll
+//)
+
+//assembly / assemblyJarName :=
+//  s"${name.value}-assembly_${scalaBinaryVersion.value}-${version.value}.jar"
+
+//libraryDependencies ++= Seq(
+//  "org.scalatest" %% "scalatest" % scalatestV % Test,
+//  "com.typesafe"   % "config"    % typesafeCfgV
+//) ++ sparkLibrary.vXXprovided(scalaBinaryVersion.value)
+//
+//lazy val sparkLibrary = new {
+//  private val libs = Seq("core", "sql")
+//  def vXX(scalaBinaryVersionString: String): Seq[ModuleID] =
+//    libs.map { lib =>
+//      "org.apache.spark" %% s"spark-${lib}" % SparkVersions.vXX(
+//        scalaBinaryVersionString
+//      )
+//    }
+//  def vXXprovided(scalaBinaryVersionString: String): Seq[ModuleID] =
+//    vXX(scalaBinaryVersionString).map { _ % "provided" }
+//}
